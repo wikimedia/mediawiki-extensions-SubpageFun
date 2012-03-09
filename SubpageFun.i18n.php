@@ -49,6 +49,13 @@ $messages['dsb'] = array(
 	'subpagefun-desc' => 'Pśidawa parserowe funkcije, kótarež dowóluju wobšyrne informacije wó [http://www.mediawiki.org/wiki/Help:Subpages pódbokach] dóstaś',
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'subpagefun-desc' => 'Añade funciones de analizador (parser) que permiten obtener amplia información sobre las [http://www.mediawiki.org/wiki/Help:Subpages subpáginas]',
+);
+
 /** French (Français)
  * @author Gomoko
  */
