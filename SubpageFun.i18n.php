@@ -91,11 +91,25 @@ $messages['ia'] = array(
 	'subpagefun-desc' => 'Adde functiones al analysator syntactic que permitte ganiar information extense a proposito de [http://www.mediawiki.org/wiki/Help:Subpages subpaginas]',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 下位ページ]について広範な情報を得るためのパーサー関数を追加する',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
 	'subpagefun-desc' => 'Додава парсерски функции што даваат приказ на опширни информации за [www.mediawiki.org/wiki/Help:Subpages?uselang=mk потстраници]',
+);
+
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'subpagefun-desc' => 'Membubuh fungsi penghurai untuk membolehkan pemerolehan maklumat menyeluruh tentang [http://www.mediawiki.org/wiki/Help:Subpages sublaman]',
 );
 
 /** Dutch (Nederlands)
