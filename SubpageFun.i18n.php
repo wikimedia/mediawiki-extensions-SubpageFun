@@ -91,6 +91,13 @@ $messages['ia'] = array(
 	'subpagefun-desc' => 'Adde functiones al analysator syntactic que permitte ganiar information extense a proposito de [http://www.mediawiki.org/wiki/Help:Subpages subpaginas]',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'subpagefun-desc' => 'Aggiunge funzioni parser che consentono di ottenere informazioni dettagliate sulle [http://www.mediawiki.org/wiki/Help:Subpages sottopagine]',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
