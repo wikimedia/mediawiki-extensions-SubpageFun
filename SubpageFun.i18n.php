@@ -20,6 +20,13 @@ $messages['en'] = array(
 	'subpagefun-desc' => 'Adds parser functions allowing to gain extensive information about [http://www.mediawiki.org/wiki/Help:Subpages subpages]',
 );
 
+/** Message documentation (Message documentation)
+ * @author Purodha
+ */
+$messages['qqq'] = array(
+	'subpagefun-desc' => '{{desc}}',
+);
+
 /** Asturian (Asturianu)
  * @author Xuacu
  */
@@ -103,6 +110,13 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 下位ページ]について広範な情報を得るためのパーサー関数を追加する',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'subpagefun-desc' => 'Brängk Paaser Funxjuhne en et Wiki, öm ene Houfe Aanjabe övver [http://www.mediawiki.org/wiki/Help:Subpages Ongersigge] ze krijje.',
 );
 
 /** Macedonian (Македонски)
