@@ -112,6 +112,13 @@ $messages['ja'] = array(
 	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 下位ページ]について広範な情報を得るためのパーサー関数を追加する',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 하위 문서]에 대한 광범위한 정보를 얻을 수 있도록 파서 기능을 추가',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
