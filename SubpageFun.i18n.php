@@ -27,7 +27,7 @@ $messages['qqq'] = array(
 	'subpagefun-desc' => '{{desc}}',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -56,14 +56,14 @@ $messages['dsb'] = array(
 	'subpagefun-desc' => 'Pśidawa parserowe funkcije, kótarež dowóluju wobšyrne informacije wó [http://www.mediawiki.org/wiki/Help:Subpages pódbokach] dóstaś',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
 	'subpagefun-desc' => 'Añade funciones de analizador (parser) que permiten obtener amplia información sobre las [http://www.mediawiki.org/wiki/Help:Subpages subpáginas]',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
@@ -91,7 +91,7 @@ $messages['hsb'] = array(
 	'subpagefun-desc' => 'Přidawa parserowe funkcije, kotrež dowoleja wobšěrne informacije wo [http://www.mediawiki.org/wiki/Help:Subpages podstronach] dóstać',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -126,7 +126,7 @@ $messages['ksh'] = array(
 	'subpagefun-desc' => 'Brängk Paaser Funxjuhne en et Wiki, öm ene Houfe Aanjabe övver [http://www.mediawiki.org/wiki/Help:Subpages Ongersigge] ze krijje.',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -147,7 +147,7 @@ $messages['nl'] = array(
 	'subpagefun-desc' => "Voegt parserfuncties toe die het mogelijk maken informatie over [http://www.mediawiki.org/wiki/Help:Subpages subpagina's] weer te geven",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
