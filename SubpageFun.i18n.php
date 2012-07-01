@@ -34,7 +34,7 @@ $messages['ast'] = array(
 	'subpagefun-desc' => 'Amiesta funciones analítiques que permiten sacar información abondo tocante a les [http://www.mediawiki.org/wiki/Help:Subpages sub-páxines]',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Jim-by
  * @author Wizardist
  */
@@ -49,7 +49,7 @@ $messages['de'] = array(
 	'subpagefun-desc' => 'Fügt Parser-Funktionen zum Ermitteln umfangreicher Informationen über [http://www.mediawiki.org/wiki/Help:Subpages Unterseiten] hinzu',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -70,7 +70,7 @@ $messages['fr'] = array(
 	'subpagefun-desc' => "Ajoute des fonctions d'analyse permettant d'obtenir des informations complètes sur [http://www.mediawiki.org/wiki/Help:Subpages les sous-pages]",
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -84,7 +84,7 @@ $messages['he'] = array(
 	'subpagefun-desc' => 'הוספת פונקציות מפענח שמאפשרות לקבל מידע נרחב על [http://www.mediawiki.org/wiki/Help:Subpages דפי־משנה]',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
