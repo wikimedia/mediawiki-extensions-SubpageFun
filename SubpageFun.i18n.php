@@ -162,3 +162,10 @@ $messages['pms'] = array(
 	'subpagefun-desc' => "A gionta dle funsion d'anàlisi ch'a përmëtto ëd pijé d'anformassion complete an sle [http://www.mediawiki.org/wiki/Help:Subpages sot-pàgine]",
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'subpagefun-desc' => 'Nagdaragdag ng mga tungkuling pambanghay na nagpapahintulot sa pagkakamit ng malawak na kabatiran hinggil sa [http://www.mediawiki.org/wiki/Help:Subpages mga subpahina]',
+);
+
