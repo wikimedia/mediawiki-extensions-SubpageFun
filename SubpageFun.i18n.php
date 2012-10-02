@@ -34,7 +34,7 @@ $messages['ast'] = array(
 	'subpagefun-desc' => 'Amiesta funciones analítiques que permiten sacar información abondo tocante a les [http://www.mediawiki.org/wiki/Help:Subpages sub-páxines]',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Jim-by
  * @author Wizardist
  */
