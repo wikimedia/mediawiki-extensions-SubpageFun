@@ -168,4 +168,3 @@ $messages['pms'] = array(
 $messages['tl'] = array(
 	'subpagefun-desc' => 'Nagdaragdag ng mga tungkuling pambanghay na nagpapahintulot sa pagkakamit ng malawak na kabatiran hinggil sa [http://www.mediawiki.org/wiki/Help:Subpages mga subpahina]',
 );
-
