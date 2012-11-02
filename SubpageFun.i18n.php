@@ -168,3 +168,10 @@ $messages['pms'] = array(
 $messages['tl'] = array(
 	'subpagefun-desc' => 'Nagdaragdag ng mga tungkuling pambanghay na nagpapahintulot sa pagkakamit ng malawak na kabatiran hinggil sa [http://www.mediawiki.org/wiki/Help:Subpages mga subpahina]',
 );
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'subpagefun-desc' => '增加解析器函数允许获得大量的[http://www.mediawiki.org/wiki/Help:Subpages 子页面]',
+);
