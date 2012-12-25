@@ -169,6 +169,13 @@ $messages['tl'] = array(
 	'subpagefun-desc' => 'Nagdaragdag ng mga tungkuling pambanghay na nagpapahintulot sa pagkakamit ng malawak na kabatiran hinggil sa [http://www.mediawiki.org/wiki/Help:Subpages mga subpahina]',
 );
 
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'subpagefun-desc' => 'Додає парсерні функції, що дозволє отримати детальну інформацію про [http://www.mediawiki.org/wiki/Help:Subpages підсторінки]',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Yfdyh000
  */
