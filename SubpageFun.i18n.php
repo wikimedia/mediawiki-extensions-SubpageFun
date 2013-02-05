@@ -162,6 +162,13 @@ $messages['pms'] = array(
 	'subpagefun-desc' => "A gionta dle funsion d'anàlisi ch'a përmëtto ëd pijé d'anformassion complete an sle [http://www.mediawiki.org/wiki/Help:Subpages sot-pàgine]",
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'subpagefun-desc' => "Aggiunge le funziune analizzatrice ca permettene de guadagnà 'mbormaziune estese sus a le  [http://www.mediawiki.org/wiki/Help:Subpages sottopàggene]",
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
