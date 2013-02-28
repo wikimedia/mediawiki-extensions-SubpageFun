@@ -22,9 +22,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Purodha
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'subpagefun-desc' => '{{desc}}',
+	'subpagefun-desc' => '{{desc|name=Subpage Fun|url=http://www.mediawiki.org/wiki/Extension:Subpage_Fun}}',
 );
 
 /** Asturian (asturianu)
