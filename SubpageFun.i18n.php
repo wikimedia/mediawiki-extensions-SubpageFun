@@ -190,3 +190,10 @@ $messages['uk'] = array(
 $messages['zh-hans'] = array(
 	'subpagefun-desc' => '增加解析器函数允许获得大量的[http://www.mediawiki.org/wiki/Help:Subpages 子页面]',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
+ */
+$messages['zh-hant'] = array(
+	'subpagefun-desc' => '增加解析器函數以容許取得大量[http://www.mediawiki.org/wiki/Help:Subpages 子頁面]資訊',
+);
