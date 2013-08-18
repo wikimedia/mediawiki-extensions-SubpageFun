@@ -117,7 +117,7 @@ $messages['ja'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 하위 문서]에 대한 광범위한 정보를 얻을 수 있도록 파서 기능을 추가',
+	'subpagefun-desc' => '[http://www.mediawiki.org/wiki/Help:Subpages 하위 문서]에 대한 광범위한 정보를 얻을 수 있도록 파서 함수를 추가합니다',
 );
 
 /** Colognian (Ripoarisch)
