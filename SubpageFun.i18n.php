@@ -163,6 +163,13 @@ $messages['pms'] = array(
 	'subpagefun-desc' => "A gionta dle funsion d'anàlisi ch'a përmëtto ëd pijé d'anformassion complete an sle [http://www.mediawiki.org/wiki/Help:Subpages sot-pàgine]",
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'subpagefun-desc' => 'Adiciona funções sintáticas que permitem obter informações extensivas sobre [http://www.mediawiki.org/wiki/Help:Subpages/pt-br subpáginas]',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
