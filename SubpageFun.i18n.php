@@ -177,6 +177,13 @@ $messages['roa-tara'] = array(
 	'subpagefun-desc' => "Aggiunge le funziune analizzatrice ca permettene de guadagnà 'mbormaziune estese sus a le  [http://www.mediawiki.org/wiki/Help:Subpages sottopàggene]",
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'subpagefun-desc' => 'Добавляет функции, позволяющие получить обширную информацию о [http://www.mediawiki.org/wiki/Help:Subpages подстраницах]',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
