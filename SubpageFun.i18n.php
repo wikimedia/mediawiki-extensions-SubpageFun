@@ -131,7 +131,7 @@ $messages['ksh'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'subpagefun-desc' => 'Додава парсерски функции што даваат приказ на опширни информации за [www.mediawiki.org/wiki/Help:Subpages?uselang=mk потстраници]',
+	'subpagefun-desc' => 'Додава расчленувачки функции што даваат приказ на опширни информации за [www.mediawiki.org/wiki/Help:Subpages?uselang=mk потстраници]',
 );
 
 /** Malay (Bahasa Melayu)
