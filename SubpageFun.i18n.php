@@ -64,6 +64,13 @@ $messages['es'] = array(
 	'subpagefun-desc' => 'Añade funciones de analizador (parser) que permiten obtener amplia información sobre las [http://www.mediawiki.org/wiki/Help:Subpages subpáginas]',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'subpagefun-desc' => 'افزودن عملیات تجزیه‌ کننده مجاز برای به دست آوردن اطلاعات گسترده درباره [http://www.mediawiki.org/wiki/Help:Subpages subpages]',
+);
+
 /** French (français)
  * @author Gomoko
  */
