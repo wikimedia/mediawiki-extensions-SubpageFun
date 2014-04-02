@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Daniel Werner"
+        ]
+    },
+    "subpagefun-desc": "Adds parser functions allowing to gain extensive information about [http://www.mediawiki.org/wiki/Help:Subpages subpages]"
+}

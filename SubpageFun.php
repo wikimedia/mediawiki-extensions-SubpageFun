@@ -1,5 +1,4 @@
 <?php
-
 /**
  * 'Subpage Fun' is a MediaWiki extension which defines some new parser functions to get
  * advanced information about subpages.
@@ -7,8 +6,7 @@
  * Documentation: http://www.mediawiki.org/wiki/Extension:Subpage_Fun
  * Support:       http://www.mediawiki.org/wiki/Extension_talk:Subpage_Fun
  * Source code:   http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/SubpageFun
- * 
- * @version: 0.5.3
+ *
  * @license: ISC license
  * @author:  Daniel Werner < danweetz@web.de >
  *
@@ -18,9 +16,6 @@
 
 if ( ! defined( 'MEDIAWIKI' ) ) { die( ); }
 
-
-/**** extension info ****/ 
- 
 $wgExtensionCredits['parserhook'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'Subpage Fun',
@@ -31,6 +26,7 @@ $wgExtensionCredits['parserhook'][] = array(
 );
 
 // language files:
+$wgMessagesDirs['SubpageFun'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['SubpageFun'     ] = ExtSubpageFun::getDir() . '/SubpageFun.i18n.php';
 $wgExtensionMessagesFiles['SubpageFunMagic'] = ExtSubpageFun::getDir() . '/SubpageFun.i18n.magic.php';
 
@@ -49,7 +45,7 @@ $wgHooks['GetThisVariableValueSwitch'][] = 'ExtSubpageFun::onGetThisVariableValu
 
 class ExtSubpageFun {
 
-	const VERSION = '0.5.3';
+	const VERSION = '0.6.0';
 
 	const MAG_SUBPAGETITLE     = 'subpagetitle';
 	const MAG_SUBPAGES         = 'subpages';
@@ -58,7 +54,7 @@ class ExtSubpageFun {
 	const MAG_SUBPAGELEVEL     = 'subpagelevel';
 	const MAG_NUMBEROFSUBPAGES = 'numberofsubpages';
 	const MAG_TOPLEVELPAGE     = 'toplevelpage';
-	
+
 	static function init( Parser &$parser ) {
 		// optional SFH_NO_HASH to omit the hash '#' from function names
 		$parser->setFunctionHook( self::MAG_SUBPAGETITLE,     array( __CLASS__, 'pf_subpagetitle' ),     SFH_NO_HASH );
@@ -68,28 +64,28 @@ class ExtSubpageFun {
 		$parser->setFunctionHook( self::MAG_SUBPAGELEVEL,     array( __CLASS__, 'pf_subpagelevel' ),     SFH_NO_HASH );
 		$parser->setFunctionHook( self::MAG_NUMBEROFSUBPAGES, array( __CLASS__, 'pf_numberofsubpages' ), SFH_NO_HASH );
 		$parser->setFunctionHook( self::MAG_TOPLEVELPAGE,     array( __CLASS__, 'pf_toplevelpage' ),     SFH_NO_HASH );
-		
+
 		return true;
 	}
-	
+
 	/**
 	 * Returns the extensions base installation directory.
 	 *
 	 * @since 0.5
-	 * 
+	 *
 	 * @return boolean
 	 */
-	public static function getDir() {		
+	public static function getDir() {
 		static $dir = null;
-		
+
 		if( $dir === null ) {
 			$dir = dirname( __FILE__ );
 		}
 		return $dir;
 	}
-	
+
 	/*** private helper functions: ***/
-	
+
 	/**
 	 * Helper function for seperating n arguments of a MW parser function
 	 * @return array
@@ -99,7 +95,7 @@ class ExtSubpageFun {
 		# Populate $argv with both named and numeric parameters
 		$argv = array();
 		$numargs = 0;
-		
+
 		foreach ($args as $arg) if( ! is_object( $arg ) )
 		{
 			if( preg_match(
@@ -116,17 +112,17 @@ class ExtSubpageFun {
 		}
 		return $argv;
 	}
-	
+
 	/**
 	 * Helper to get a new title from user input. Returns null if invalid title is given.
-	 * 
+	 *
 	 * @param Parser $parser
 	 * @param string $title
-	 * 
+	 *
 	 * @return Title|null
 	 */
 	private static function newTitleObject ( Parser &$parser, $title = null ) {
-		
+
 		if( is_array( $title ) ) {
 			/*
 			 * Instead of one Title, all arguments given to the parser function are given.
@@ -135,9 +131,9 @@ class ExtSubpageFun {
 			 */
 			// get all possible arguments:
 			$args = ExtSubpageFun::getFunctionArgsArray( $title );
-			$title = isset( $args[1] ) ? $args[1] : null;	
+			$title = isset( $args[1] ) ? $args[1] : null;
 		}
-		
+
 		if( $title !== null && $title !== '' ) {
 			return Title::newFromText( $title );
 		}
@@ -148,16 +144,16 @@ class ExtSubpageFun {
 	/**
 	 * Create a list with page titles as final output of a SubpageFun function.
 	 * The output ist un-parsed wiki markup, no HTML.
-	 * 
+	 *
 	 * @param array  $pages array of Title elements
 	 * @param bool   $link whether or not to link the pages in the list
 	 * @param string $sep  glue between the pages
-	 * 
+	 *
 	 * @return string
 	 */
 	protected static function createSiteList( $pages, $link = false, $sep = ', ' ) {
 		$out = array();
-		foreach( $pages as $page ) {			
+		foreach( $pages as $page ) {
 			$text = $page->getPrefixedText();
 			if( $link ) {
 				$out[] = "[[:{$text}]]";
@@ -168,15 +164,15 @@ class ExtSubpageFun {
 		}
 		return implode( $sep, $out );
 	}
-	
+
 	/**
 	 * Filters a list of title elements by a word or a regular expression.
 	 * The titles name without prefix is taken for comparision.
-	 * 
+	 *
 	 * @param array  $list
 	 * @param string $filter
-	 * 
-	 * @return array 
+	 *
+	 * @return array
 	 */
 	protected static function filterSiteList( array $list, $filter = null ) {
 		// return all if no filter set:
@@ -185,16 +181,16 @@ class ExtSubpageFun {
 		}
         if ( ! self::isValidRegEx( $filter ) ) {
 			// no regex given, create one returning everything having the $filter words in it
-			$filters = explode( '|', $filter );			
+			$filters = explode( '|', $filter );
 			foreach( $filters as &$part ) {
 				$part = preg_quote( trim( $part ), '/' );
 			}
 			$filter = '/^.*(?:' . implode( '|', $filters ) . ').*$/i';
 		}
-		
+
 		// create new array from all matches:
 		$newList = array();
-		
+
 		foreach( $list as $t ) {
 			if ( preg_match( $filter, $t->getText() ) ) {
 				$newList[] = $t;
@@ -202,13 +198,13 @@ class ExtSubpageFun {
         }
 		return $newList;
 	}
-	
+
 	/**
 	 * Decides for the given $pattern whether its a valid regular expression acceptable for
 	 * the 'filter' parameter or not.
-	 * 
+	 *
 	 * @param string $pattern regular expression including delimiters and optional flags
-	 * 
+	 *
 	 * @return boolean
 	 */
 	public static function isValidRegEx( $pattern ) {
@@ -221,14 +217,14 @@ class ExtSubpageFun {
 		wfRestoreWarnings();
 		return $isValid;
 	}
-	
+
 	/**
 	 * Function to validate the paraameter depth required by some functions
 	 * returns null if no value or invalid value is given, an integer if
 	 * a number, including negative value, is given
-	 * 
+	 *
 	 * @param $depth Mixed
-	 * 
+	 *
 	 * @return Mixed null or integer
 	 */
 	protected static function valDepth( $depth ) {
@@ -245,20 +241,20 @@ class ExtSubpageFun {
 		}
 		// invalid value like text:
 		else
-			return null;			
+			return null;
 	}
-	
-	
+
+
 	/*** 'Subpage Fun' parser functions: ***/
 
-	static function pf_subpagetitle( &$parser /* , $title = null */ ) {		
+	static function pf_subpagetitle( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
 		return wfEscapeWikiText( SubpageInfo::getSubpageTitle( $t ) );
 	}
-	
+
 	static function pf_subpages( &$parser ) {
 		// get all possible arguments:
 		$args = ExtSubpageFun::getFunctionArgsArray( func_get_args() );
@@ -267,23 +263,23 @@ class ExtSubpageFun {
 		$linked = isset( $args['linked'] ) ? true            : false;
 		$sep    = isset( $args['sep'] )    ? $args['sep']    : ', ';
 		$filter = isset( $args['filter'] ) ? $args['filter'] : null;
-		$depth  = isset( $args['depth'] )  ? self::valDepth( $args['depth'] ) : null;		
-		
+		$depth  = isset( $args['depth'] )  ? self::valDepth( $args['depth'] ) : null;
+
 		// function logic:
 		$t = self::newTitleObject( $parser, $title );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
-		
+
 		// get subpages:
 		$subpages = SubpageInfo::getSubpages( $t, $depth );
-		
+
 		// filter by filter criterion:
 		$subpages = self::filterSiteList( $subpages, $filter );
-		
+
 		return self::createSiteList( $subpages, $linked, $sep );
 	}
-	
+
 	static function pf_parentpages( &$parser ) {
 		// get all possible arguments:
 		$args = ExtSubpageFun::getFunctionArgsArray( func_get_args() );
@@ -293,22 +289,22 @@ class ExtSubpageFun {
 		$sep    = isset( $args['sep'] )    ? $args['sep']    : ', ';
 		$filter = isset( $args['filter'] ) ? $args['filter'] : null;
 		$depth  = isset( $args['depth'] )  ? self::valDepth( $args['depth'] ) : null;
-		
+
 		// function logic:
 		$t = self::newTitleObject( $parser, $title );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
-		
+
 		// get parent pages:
 		$parentpages = SubpageInfo::getAncestorPages( $t, $depth );
-		
+
 		// filter by filter criterion:
 		$parentpages = self::filterSiteList( $parentpages, $filter );
-		
+
 		return self::createSiteList( $parentpages, $linked, $sep );
-	}	
-	
+	}
+
 	static function pf_siblingpages( &$parser ) {
 		//get all possible arguments:
 		$args = ExtSubpageFun::getFunctionArgsArray( func_get_args() );
@@ -317,62 +313,62 @@ class ExtSubpageFun {
 		$linked = isset( $args['linked'] ) ? true            : false;
 		$sep    = isset( $args['sep'] )    ? $args['sep']    : ', ';
 		$filter = isset( $args['filter'] ) ? $args['filter'] : null;
-	
+
 		//function logic:
 		$t = self::newTitleObject( $parser, $title );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
-		
+
 		// get siblings:
 		$siblingpages = SubpageInfo::getSiblingPages( $t );
-		
+
 		// filter by filter criterion:
 		$siblingpages = self::filterSiteList( $siblingpages, $filter );
 
 		return self::createSiteList( $siblingpages, $linked, $sep );
-	}	
-	
-	static function pf_subpagelevel( &$parser /* , $title = null */ ) {		
+	}
+
+	static function pf_subpagelevel( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
 		return SubpageInfo::getSubpageLevel( $t );
-	}	
-	
-	static function pf_numberofsubpages( &$parser ) {		
+	}
+
+	static function pf_numberofsubpages( &$parser ) {
 		//get all possible arguments:
 		$args = ExtSubpageFun::getFunctionArgsArray( func_get_args() );
 
 		$title  = isset($args[1])          ? $args[1]                         : null;
 		$depth  = isset( $args['depth'] )  ? self::valDepth( $args['depth'] ) : null;
 		$filter = isset( $args['filter'] ) ? $args['filter']                  : null;
-		
+
 		// function logic:
 		$t = self::newTitleObject( $parser, $title );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
-		
+
 		// get subpages:
 		$subpages = SubpageInfo::getSubpages( $t, $depth );
-		
+
 		// filter by filter criterion:
 		$subpages = self::filterSiteList( $subpages, $filter );
-				
+
 		return count( $subpages );
-	}	
-	
-	static function pf_toplevelpage( &$parser /* , $title = null */ ) {		
+	}
+
+	static function pf_toplevelpage( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if( $t === null ) {
 			return ''; // invalid title given
 		}
-		
+
 		//get all parents because the toplevel is the highest existing parent:
 		$parentpages = SubpageInfo::getAncestorPages( $t );
-		
+
 		if( ! empty( $parentpages ) ) {
 			return wfEscapeWikiText( $parentpages[0]->getPrefixedText() );
 		}
@@ -381,14 +377,14 @@ class ExtSubpageFun {
 			return wfEscapeWikiText( $t->getPrefixedText() );
 		}
 	}
-	
-	
+
+
 	/**** All the SubpageFunctions for use with MW Variables on the current page ****/
-	
+
 	static function onParserGetVariableValueSwitch( Parser &$parser, &$cache, &$magicWordId, &$ret, $frame = null ) {
 		return self::variableValueSwitch( $parser, $magicWordId, $ret );
 	}
-	
+
 	/**
 	 * Make 'Parser Fun' extensions 'THIS' function work with our variables/functions
 	 */
@@ -398,17 +394,17 @@ class ExtSubpageFun {
 			$expArgs[] = trim( $frame->expand( $arg ) );
 		}
 		$expArgs[] = '1=' . $title->getPrefixedText();
-		
+
 		return self::variableValueSwitch( $parser, $magicWordId, $ret, $expArgs );
 	}
-	
+
 	/**
 	 * Where value assigning for normal variables and 'Parser Fun' extensions 'THIS' come together
 	 */
 	private static function variableValueSwitch( Parser &$parser, $magicWordId, &$ret, $args = array() ) {
 		// function to call
 		$func = null;
-		
+
 		switch( $magicWordId ) {
 			/** SUBPAGETITLE **/
 			case self::MAG_SUBPAGETITLE:
@@ -443,10 +439,10 @@ class ExtSubpageFun {
 			$args = array_merge( array( &$parser ), $args ); // $parser as first argument!
 			$ret = call_user_func_array( array( __CLASS__, $func ), $args );
 		}
-		
+
 		return true;
 	}
-	
+
 	static function onMagicWordwgVariableIDs( &$customVariableIds ) {
 		// register variable ids:
 		$customVariableIds[] = self::MAG_SUBPAGETITLE;
@@ -456,8 +452,8 @@ class ExtSubpageFun {
 		$customVariableIds[] = self::MAG_SUBPAGELEVEL;
 		$customVariableIds[] = self::MAG_NUMBEROFSUBPAGES;
 		$customVariableIds[] = self::MAG_TOPLEVELPAGE;
-		
+
 		return true;
 	}
-	
+
 }

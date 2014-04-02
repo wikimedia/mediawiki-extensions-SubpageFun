@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "subpagefun-desc": "Aggiunge funzioni parser che consentono di ottenere informazioni dettagliate sulle [http://www.mediawiki.org/wiki/Help:Subpages sottopagine]"
+}
