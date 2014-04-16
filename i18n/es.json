@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin"
-        ]
-    },
-    "subpagefun-desc": "Añade funciones de analizador (parser) que permiten obtener amplia información sobre las [http://www.mediawiki.org/wiki/Help:Subpages subpáginas]"
+	"@metadata": {
+		"authors": [
+			"Armando-Martin"
+		]
+	},
+	"subpagefun-desc": "Añade funciones de analizador (parser) que permiten obtener amplia información sobre las [http://www.mediawiki.org/wiki/Help:Subpages subpáginas]"
 }

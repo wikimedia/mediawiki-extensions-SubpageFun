@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "BeginaFelicysym"
-        ]
-    },
-    "subpagefun-desc": "Dodaje funkcje analizatora umożliwiające uzyskanie wyczerpujących informacji o [http://www.mediawiki.org/wiki/Help:Subpages podstronach]"
+	"@metadata": {
+		"authors": [
+			"BeginaFelicysym"
+		]
+	},
+	"subpagefun-desc": "Dodaje funkcje analizatora umożliwiające uzyskanie wyczerpujących informacji o [http://www.mediawiki.org/wiki/Help:Subpages podstronach]"
 }

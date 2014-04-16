@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ата"
-        ]
-    },
-    "subpagefun-desc": "Додає парсерні функції, що дозволє отримати детальну інформацію про [http://www.mediawiki.org/wiki/Help:Subpages підсторінки]"
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"subpagefun-desc": "Додає парсерні функції, що дозволє отримати детальну інформацію про [http://www.mediawiki.org/wiki/Help:Subpages підсторінки]"
 }

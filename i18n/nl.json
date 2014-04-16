@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Siebrand"
-        ]
-    },
-    "subpagefun-desc": "Voegt parserfuncties toe die het mogelijk maken informatie over [http://www.mediawiki.org/wiki/Help:Subpages subpagina's] weer te geven"
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"subpagefun-desc": "Voegt parserfuncties toe die het mogelijk maken informatie over [http://www.mediawiki.org/wiki/Help:Subpages subpagina's] weer te geven"
 }

@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gomoko"
-        ]
-    },
-    "subpagefun-desc": "Ajoute des fonctions d'analyse permettant d'obtenir des informations complètes sur [http://www.mediawiki.org/wiki/Help:Subpages les sous-pages]"
+	"@metadata": {
+		"authors": [
+			"Gomoko"
+		]
+	},
+	"subpagefun-desc": "Ajoute des fonctions d'analyse permettant d'obtenir des informations complètes sur [http://www.mediawiki.org/wiki/Help:Subpages les sous-pages]"
 }
