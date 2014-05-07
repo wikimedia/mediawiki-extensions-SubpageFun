@@ -4,5 +4,5 @@
 			"Justincheng12345"
 		]
 	},
-	"subpagefun-desc": "增加解析器函數以容許取得大量[http://www.mediawiki.org/wiki/Help:Subpages 子頁面]資訊"
+	"subpagefun-desc": "增加解析器函數以容許取得大量[https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Subpages 子頁面]資訊"
 }
