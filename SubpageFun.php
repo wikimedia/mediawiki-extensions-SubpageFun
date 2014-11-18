@@ -56,14 +56,14 @@ class ExtSubpageFun {
 	const MAG_TOPLEVELPAGE     = 'toplevelpage';
 
 	static function init( Parser &$parser ) {
-		// optional SFH_NO_HASH to omit the hash '#' from function names
-		$parser->setFunctionHook( self::MAG_SUBPAGETITLE,     array( __CLASS__, 'pf_subpagetitle' ),     SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_SUBPAGES,         array( __CLASS__, 'pf_subpages' ),         SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_PARENTPAGES,      array( __CLASS__, 'pf_parentpages' ),      SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_SIBLINGPAGES,     array( __CLASS__, 'pf_siblingpages' ),     SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_SUBPAGELEVEL,     array( __CLASS__, 'pf_subpagelevel' ),     SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_NUMBEROFSUBPAGES, array( __CLASS__, 'pf_numberofsubpages' ), SFH_NO_HASH );
-		$parser->setFunctionHook( self::MAG_TOPLEVELPAGE,     array( __CLASS__, 'pf_toplevelpage' ),     SFH_NO_HASH );
+		// optional Parser::SFH_NO_HASH to omit the hash '#' from function names
+		$parser->setFunctionHook( self::MAG_SUBPAGETITLE,     array( __CLASS__, 'pf_subpagetitle' ),     Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_SUBPAGES,         array( __CLASS__, 'pf_subpages' ),         Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_PARENTPAGES,      array( __CLASS__, 'pf_parentpages' ),      Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_SIBLINGPAGES,     array( __CLASS__, 'pf_siblingpages' ),     Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_SUBPAGELEVEL,     array( __CLASS__, 'pf_subpagelevel' ),     Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_NUMBEROFSUBPAGES, array( __CLASS__, 'pf_numberofsubpages' ), Parser::SFH_NO_HASH );
+		$parser->setFunctionHook( self::MAG_TOPLEVELPAGE,     array( __CLASS__, 'pf_toplevelpage' ),     Parser::SFH_NO_HASH );
 
 		return true;
 	}
