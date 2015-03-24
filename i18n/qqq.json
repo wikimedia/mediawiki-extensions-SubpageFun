@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Purodha",
-			"Shirayuki"
+			"Shirayuki",
+			"Umherirrender"
 		]
 	},
-	"subpagefun-desc": "{{desc|name=Subpage Fun|url=http://www.mediawiki.org/wiki/Extension:Subpage_Fun}}"
+	"subpagefun-desc": "{{desc|name=Subpage Fun|url=https://www.mediawiki.org/wiki/Extension:Subpage_Fun}}"
 }
