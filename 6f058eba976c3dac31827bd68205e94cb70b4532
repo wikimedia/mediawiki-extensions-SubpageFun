@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4e7eab26_9cf3d806",
+        "filename": "SubpageFun.hooks.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-31T11:07:26Z",
+      "side": 1,
+      "message": "This class name does not match with the one in extension.json. Based on that it should instead be named SubpageFunHooks.",
+      "range": {
+        "startLine": 2,
+        "startChar": 6,
+        "endLine": 2,
+        "endChar": 19
+      },
+      "revId": "6f058eba976c3dac31827bd68205e94cb70b4532",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_1ce04823",
+        "filename": "extension.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-31T11:07:26Z",
+      "side": 1,
+      "message": "There\u0027s no need to keep the I18n shim compatibility in extension.json, so this line can be removed",
+      "range": {
+        "startLine": 21,
+        "startChar": 2,
+        "endLine": 21,
+        "endChar": 38
+      },
+      "revId": "6f058eba976c3dac31827bd68205e94cb70b4532",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4e7eab26_fce45c3a",
+        "filename": "extension.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4064
+      },
+      "writtenOn": "2017-08-31T11:07:26Z",
+      "side": 1,
+      "message": "This should be the SubpageFun.i18n.magic.php file, and it\u0027s key should be SubpageFunMagic",
+      "range": {
+        "startLine": 22,
+        "startChar": 2,
+        "endLine": 22,
+        "endChar": 42
+      },
+      "revId": "6f058eba976c3dac31827bd68205e94cb70b4532",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
