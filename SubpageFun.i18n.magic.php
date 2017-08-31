@@ -14,11 +14,11 @@
 $magicWords = array();
 
 $magicWords['en'] = array(
-		ExtSubpageFun::MAG_SUBPAGETITLE     => array ( 1, 'SUBPAGETITLE' ),
-		ExtSubpageFun::MAG_SUBPAGES         => array ( 1, 'SUBPAGES' ),
-		ExtSubpageFun::MAG_PARENTPAGES      => array ( 1, 'PARENTPAGES' ),
-		ExtSubpageFun::MAG_SIBLINGPAGES     => array ( 1, 'SIBLINGPAGES' ),
-		ExtSubpageFun::MAG_SUBPAGELEVEL     => array ( 1, 'SUBPAGELEVEL' ),
-		ExtSubpageFun::MAG_NUMBEROFSUBPAGES => array ( 1, 'NUMBEROFSUBPAGES' ),
-		ExtSubpageFun::MAG_TOPLEVELPAGE     => array ( 1, 'TOPLEVELPAGE' ),
+		ExtSubpageHooks::MAG_SUBPAGETITLE     => array ( 1, 'SUBPAGETITLE' ),
+		ExtSubpageHooks::MAG_SUBPAGES         => array ( 1, 'SUBPAGES' ),
+		ExtSubpageHooks::MAG_PARENTPAGES      => array ( 1, 'PARENTPAGES' ),
+		ExtSubpageHooks::MAG_SIBLINGPAGES     => array ( 1, 'SIBLINGPAGES' ),
+		ExtSubpageHooks::MAG_SUBPAGELEVEL     => array ( 1, 'SUBPAGELEVEL' ),
+		ExtSubpageHooks::MAG_NUMBEROFSUBPAGES => array ( 1, 'NUMBEROFSUBPAGES' ),
+		ExtSubpageHooks::MAG_TOPLEVELPAGE     => array ( 1, 'TOPLEVELPAGE' ),
 );
