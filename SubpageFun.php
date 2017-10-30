@@ -27,7 +27,6 @@ $wgExtensionCredits['parserhook'][] = array(
 
 // language files:
 $wgMessagesDirs['SubpageFun'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['SubpageFun'     ] = ExtSubpageFun::getDir() . '/SubpageFun.i18n.php';
 $wgExtensionMessagesFiles['SubpageFunMagic'] = ExtSubpageFun::getDir() . '/SubpageFun.i18n.magic.php';
 
 // Load member classes:
