@@ -3,9 +3,9 @@
  * 'Subpage Fun' is a MediaWiki extension which defines some new parser functions to get
  * advanced information about subpages.
  *
- * Documentation: http://www.mediawiki.org/wiki/Extension:Subpage_Fun
- * Support:       http://www.mediawiki.org/wiki/Extension_talk:Subpage_Fun
- * Source code:   http://svn.wikimedia.org/viewvc/mediawiki/trunk/extensions/SubpageFun
+ * Documentation: https://www.mediawiki.org/wiki/Extension:Subpage_Fun
+ * Support:       https://www.mediawiki.org/wiki/Extension_talk:Subpage_Fun
+ * Source code:   https://gerrit.wikimedia.org/r/#/admin/projects/mediawiki/extensions/SubpageFun
  *
  * @license: ISC license
  * @author:  Daniel Werner < danweetz@web.de >
@@ -21,7 +21,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'name'           => 'Subpage Fun',
 	'descriptionmsg' => 'subpagefun-desc',
 	'version'        => ExtSubpageFun::VERSION,
-	'author'         => '[http://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
+	'author'         => '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:Subpage_Fun',
 );
 
