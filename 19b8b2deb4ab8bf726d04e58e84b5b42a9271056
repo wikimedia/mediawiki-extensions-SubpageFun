@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ef7ecb5d_f9394b85",
+        "filename": "SubpageFun.i18n.magic.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2018-06-18T13:48:02Z",
+      "side": 0,
+      "message": "These aren\u0027t functions",
+      "range": {
+        "startLine": 17,
+        "startChar": 2,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "19b8b2deb4ab8bf726d04e58e84b5b42a9271056",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
