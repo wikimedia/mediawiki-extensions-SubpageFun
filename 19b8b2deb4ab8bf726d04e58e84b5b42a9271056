@@ -22,6 +22,30 @@
       "revId": "19b8b2deb4ab8bf726d04e58e84b5b42a9271056",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "200c3d9a_c2fc44dd",
+        "filename": "SubpageFun.i18n.magic.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1665
+      },
+      "writtenOn": "2018-06-18T13:48:59Z",
+      "side": 0,
+      "message": "Updated commit msg to reflect the correct one (static function).",
+      "parentUuid": "ef7ecb5d_f9394b85",
+      "range": {
+        "startLine": 17,
+        "startChar": 2,
+        "endLine": 17,
+        "endChar": 33
+      },
+      "revId": "19b8b2deb4ab8bf726d04e58e84b5b42a9271056",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
