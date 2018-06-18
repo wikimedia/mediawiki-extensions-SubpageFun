@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "801c7a25_325dfae3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1665
+      },
+      "writtenOn": "2018-06-18T14:01:22Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "2ce1483b_cd968e01",
+      "range": {
+        "startLine": 7,
+        "startChar": 7,
+        "endLine": 7,
+        "endChar": 17
+      },
+      "revId": "9e6094e5149e1dd22c8dd9de0119f9c099928089",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c0828bc5_9fea7e4e",
         "filename": "/COMMIT_MSG",
         "patchSetId": 5
@@ -36,6 +60,30 @@
       "writtenOn": "2018-06-18T14:00:44Z",
       "side": 1,
       "message": "Remove this",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 119
+      },
+      "revId": "9e6094e5149e1dd22c8dd9de0119f9c099928089",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8d6b22f5_ec8e5f01",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1665
+      },
+      "writtenOn": "2018-06-18T14:01:22Z",
+      "side": 1,
+      "message": "Thanks, done.",
+      "parentUuid": "c0828bc5_9fea7e4e",
       "range": {
         "startLine": 9,
         "startChar": 0,
