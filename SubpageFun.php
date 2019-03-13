@@ -86,7 +86,7 @@ class ExtSubpageFun {
 	/*** private helper functions: ***/
 
 	/**
-	 * Helper function for seperating n arguments of a MW parser function
+	 * Helper function for separating n arguments of a MW parser function
 	 * @return array
 	 */
 	private static function getFunctionArgsArray( $args )
