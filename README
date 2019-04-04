@@ -39,7 +39,7 @@ specific page ''{{SUBPAGES:page}}'', some even with additional parameters.
  
 As a new feature in 'Subpage Fun' 0.5.2, all these variables also support the 'THIS:' prefix functionality of the
 'Parser Fun' extension if it is installed within the wiki.
-See [http://www.mediawiki.org/wiki/Extension:Parser_Fun] for details.
+See [https://www.mediawiki.org/wiki/Extension:Parser_Fun] for details.
 
 
 == Installation ==
@@ -57,5 +57,5 @@ If you have bug reports or requests, please add them to the  'Subpage Fun' Talk 
 You can also send them to Daniel Werner < danweetz@web.de >
 
 
-[0] http://www.mediawiki.org/wiki/Help:Subpages
-[1] http://www.mediawiki.org/w/index.php?title=Extension_talk:SemanticUpdateOnPurge
+[0] https://www.mediawiki.org/wiki/Help:Subpages
+[1] https://www.mediawiki.org/w/index.php?title=Extension_talk:SemanticUpdateOnPurge
