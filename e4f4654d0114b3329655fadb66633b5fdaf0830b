@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "6b8f634c_25c0ad30",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 4879
+      },
+      "writtenOn": "2019-08-11T22:02:41Z",
+      "side": 1,
+      "message": "I will fix this in next PS.",
+      "parentUuid": "8ed2d73a_733893f5",
+      "revId": "e4f4654d0114b3329655fadb66633b5fdaf0830b",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "96375434_fd985d99",
         "filename": "extension.json",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2019-08-11T17:50:24Z",
       "side": 1,
       "message": "You are not using any features from manifest_version 2, so you can use version 1 instead and keep compatibility with MW 1.25-1.28.",
+      "revId": "e4f4654d0114b3329655fadb66633b5fdaf0830b",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f4a6c33_d303f339",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 4879
+      },
+      "writtenOn": "2019-08-11T22:02:41Z",
+      "side": 1,
+      "message": "OK, I will change this.",
+      "parentUuid": "96375434_fd985d99",
       "revId": "e4f4654d0114b3329655fadb66633b5fdaf0830b",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
