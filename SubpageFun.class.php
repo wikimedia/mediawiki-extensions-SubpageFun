@@ -1,50 +1,8 @@
 <?php
-/**
- * 'Subpage Fun' is a MediaWiki extension which defines some new parser functions to get
- * advanced information about subpages.
- *
- * Documentation: https://www.mediawiki.org/wiki/Extension:Subpage_Fun
- * Support:       https://www.mediawiki.org/wiki/Extension_talk:Subpage_Fun
- * Source code:   https://gerrit.wikimedia.org/r/#/admin/projects/mediawiki/extensions/SubpageFun
- *
- * @license: ISC license
- * @author:  Daniel Werner < danweetz@web.de >
- *
- * @file SubpageFun.php
- * @ingroup SubpageFun
- */
-
-if ( ! defined( 'MEDIAWIKI' ) ) { die( ); }
-
-$wgExtensionCredits['parserhook'][] = array(
-	'path'           => __FILE__,
-	'name'           => 'Subpage Fun',
-	'descriptionmsg' => 'subpagefun-desc',
-	'version'        => ExtSubpageFun::VERSION,
-	'author'         => '[https://www.mediawiki.org/wiki/User:Danwe Daniel Werner]',
-	'url'            => 'https://www.mediawiki.org/wiki/Extension:Subpage_Fun',
-);
-
-// language files:
-$wgMessagesDirs['SubpageFun'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['SubpageFunMagic'] = ExtSubpageFun::getDir() . '/SubpageFun.i18n.magic.php';
-
-// Load member classes:
-$wgAutoloadClasses['SubpageInfo'] = ExtSubpageFun::getDir() . '/SFun_SubpageInfo.php';
-
-// Register magic words:
-$wgHooks['ParserFirstCallInit'][] = 'ExtSubpageFun::init';
-
-// register plain variables:
-$wgHooks['MagicWordwgVariableIDs'      ][] = 'ExtSubpageFun::onMagicWordwgVariableIDs';
-$wgHooks['ParserGetVariableValueSwitch'][] = 'ExtSubpageFun::onParserGetVariableValueSwitch';
-
-// hook up for use with 'Parser Fun' extensions 'THIS' function:
-$wgHooks['GetThisVariableValueSwitch'][] = 'ExtSubpageFun::onGetThisVariableValueSwitch';
 
 class ExtSubpageFun {
 
-	const VERSION = '0.6.0';
+	const VERSION = '0.7.0';
 
 	const MAG_SUBPAGETITLE     = 'subpagetitle';
 	const MAG_SUBPAGES         = 'subpages';
