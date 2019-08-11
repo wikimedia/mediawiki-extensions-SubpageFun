@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d23e964c_a3af768b",
+        "filename": "SubpageFun.class.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2669
+      },
+      "writtenOn": "2019-08-11T17:50:24Z",
+      "side": 0,
+      "message": "This is fine, as it was not used externally.",
+      "revId": "b315f87fe5022e9139a3957fd6291e1cc285d376",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
