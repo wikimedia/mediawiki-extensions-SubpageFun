@@ -34,6 +34,24 @@
       "revId": "b315f87fe5022e9139a3957fd6291e1cc285d376",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f5e7b8c0_a5ff0a4d",
+        "filename": "SubpageFun.class.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 2669
+      },
+      "writtenOn": "2019-08-12T01:10:17Z",
+      "side": 0,
+      "message": "It is fine to remove this, as no extension depends on it. I just confirmed that.",
+      "parentUuid": "eb2609c5_0fc402b5",
+      "revId": "b315f87fe5022e9139a3957fd6291e1cc285d376",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
     }
   ]
 }
