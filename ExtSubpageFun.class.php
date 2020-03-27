@@ -337,7 +337,19 @@ class ExtSubpageFun {
 	/**** All the SubpageFunctions for use with MW Variables on the current page ****/
 
 	static function onParserGetVariableValueSwitch( Parser &$parser, &$cache, &$magicWordId, &$ret, $frame = null ) {
-		return self::variableValueSwitch( $parser, $magicWordId, $ret );
+		switch ( $magicWordId ) {
+		case self::MAG_SUBPAGETITLE:
+		case self::MAG_SUBPAGES:
+		case self::MAG_PARENTPAGES:
+		case self::MAG_SIBLINGPAGES:
+		case self::MAG_SUBPAGELEVEL:
+		case self::MAG_NUMBEROFSUBPAGES:
+		case self::MAG_TOPLEVELPAGE:
+			self::variableValueSwitch( $parser, $magicWordId, $ret );
+			$cache[$magicWordId] = $ret;
+			return true;
+		}
+		return true;
 	}
 
 	/**
