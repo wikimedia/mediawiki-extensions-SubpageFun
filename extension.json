@@ -17,8 +17,8 @@
 		"SubpageFunMagic": "SubpageFun.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"ExtSubpageFun": "ExtSubpageFun.class.php",
-		"SubpageInfo": "SFun_SubpageInfo.php"
+		"ExtSubpageFun": "src/ExtSubpageFun.php",
+		"SubpageInfo": "src/SubpageInfo.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "ExtSubpageFun::init",
