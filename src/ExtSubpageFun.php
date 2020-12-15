@@ -2,18 +2,18 @@
 
 class ExtSubpageFun {
 
-	const MAG_SUBPAGETITLE     = 'subpagetitle';
-	const MAG_SUBPAGES         = 'subpages';
-	const MAG_PARENTPAGES      = 'parentpages';
-	const MAG_SIBLINGPAGES     = 'siblingpages';
-	const MAG_SUBPAGELEVEL     = 'subpagelevel';
-	const MAG_NUMBEROFSUBPAGES = 'numberofsubpages';
-	const MAG_TOPLEVELPAGE     = 'toplevelpage';
+	private const MAG_SUBPAGETITLE = 'subpagetitle';
+	private const MAG_SUBPAGES = 'subpages';
+	private const MAG_PARENTPAGES = 'parentpages';
+	private const MAG_SIBLINGPAGES = 'siblingpages';
+	private const MAG_SUBPAGELEVEL = 'subpagelevel';
+	private const MAG_NUMBEROFSUBPAGES = 'numberofsubpages';
+	private const MAG_TOPLEVELPAGE = 'toplevelpage';
 
 	/**
 	 * @param Parser &$parser
 	 */
-	static function init( Parser &$parser ) {
+	public static function init( Parser &$parser ) {
 		// optional Parser::SFH_NO_HASH to omit the hash '#' from function names
 		$parser->setFunctionHook( self::MAG_SUBPAGETITLE, [ __CLASS__, 'pf_subpagetitle' ], Parser::SFH_NO_HASH );
 		$parser->setFunctionHook( self::MAG_SUBPAGES, [ __CLASS__, 'pf_subpages' ], Parser::SFH_NO_HASH );
@@ -150,7 +150,7 @@ class ExtSubpageFun {
 			return false;
 		}
 		Wikimedia\suppressWarnings(); // instead of using the evil @ operator!
-		$isValid = false !== preg_match( $pattern, ' ' ); // preg_match returns false on error
+		$isValid = preg_match( $pattern, ' ' ) !== false; // preg_match returns false on error
 		Wikimedia\restoreWarnings();
 		return $isValid;
 	}
@@ -185,8 +185,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_subpagetitle( &$parser /* , $title = null */ ) {
+	public static function pf_subpagetitle( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if ( $t === null ) {
 			return ''; // invalid title given
@@ -196,8 +197,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_subpages( &$parser ) {
+	public static function pf_subpages( &$parser ) {
 		// get all possible arguments:
 		$args = self::getFunctionArgsArray( func_get_args() );
 
@@ -224,8 +226,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_parentpages( &$parser ) {
+	public static function pf_parentpages( &$parser ) {
 		// get all possible arguments:
 		$args = self::getFunctionArgsArray( func_get_args() );
 
@@ -252,8 +255,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_siblingpages( &$parser ) {
+	public static function pf_siblingpages( &$parser ) {
 		// get all possible arguments:
 		$args = self::getFunctionArgsArray( func_get_args() );
 
@@ -279,8 +283,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_subpagelevel( &$parser /* , $title = null */ ) {
+	public static function pf_subpagelevel( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if ( $t === null ) {
 			return ''; // invalid title given
@@ -290,8 +295,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_numberofsubpages( &$parser ) {
+	public static function pf_numberofsubpages( &$parser ) {
 		// get all possible arguments:
 		$args = self::getFunctionArgsArray( func_get_args() );
 
@@ -316,8 +322,9 @@ class ExtSubpageFun {
 
 	/**
 	 * @param Parser &$parser
+	 * @return string Wikitext
 	 */
-	static function pf_toplevelpage( &$parser /* , $title = null */ ) {
+	public static function pf_toplevelpage( &$parser /* , $title = null */ ) {
 		$t = self::newTitleObject( $parser, func_get_args() );
 		if ( $t === null ) {
 			return ''; // invalid title given
@@ -341,9 +348,8 @@ class ExtSubpageFun {
 	 * @param array &$cache
 	 * @param string $magicWordId
 	 * @param string|null &$ret
-	 * @return true
 	 */
-	static function onParserGetVariableValueSwitch( Parser $parser, &$cache, $magicWordId, &$ret ) {
+	public static function onParserGetVariableValueSwitch( Parser $parser, &$cache, $magicWordId, &$ret ) {
 		switch ( $magicWordId ) {
 		case self::MAG_SUBPAGETITLE:
 		case self::MAG_SUBPAGES:
@@ -354,9 +360,7 @@ class ExtSubpageFun {
 		case self::MAG_TOPLEVELPAGE:
 			self::variableValueSwitch( $parser, $magicWordId, $ret );
 			$cache[$magicWordId] = $ret;
-			return true;
 		}
-		return true;
 	}
 
 	/**
@@ -368,16 +372,15 @@ class ExtSubpageFun {
 	 * @param string|null &$ret
 	 * @param PPframe $frame
 	 * @param array $args
-	 * @return true
 	 */
-	static function onGetThisVariableValueSwitch( Parser &$parser, Title $title, &$magicWordId, &$ret, PPFrame $frame, array $args ) {
+	public static function onGetThisVariableValueSwitch( Parser &$parser, Title $title, &$magicWordId, &$ret, PPFrame $frame, array $args ) {
 		$expArgs = [];
 		foreach ( $args as $arg ) {
 			$expArgs[] = trim( $frame->expand( $arg ) );
 		}
 		$expArgs[] = '1=' . $title->getPrefixedText();
 
-		return self::variableValueSwitch( $parser, $magicWordId, $ret, $expArgs );
+		self::variableValueSwitch( $parser, $magicWordId, $ret, $expArgs );
 	}
 
 	/**
@@ -387,7 +390,6 @@ class ExtSubpageFun {
 	 * @param string $magicWordId
 	 * @param string|null &$ret
 	 * @param mixed $args
-	 * @return true
 	 */
 	private static function variableValueSwitch( Parser &$parser, $magicWordId, &$ret, $args = [] ) {
 		// function to call
@@ -420,15 +422,12 @@ class ExtSubpageFun {
 			$args = array_merge( [ &$parser ], $args ); // $parser as first argument!
 			$ret = call_user_func_array( [ __CLASS__, $func ], $args );
 		}
-
-		return true;
 	}
 
 	/**
 	 * @param string[] &$customVariableIds Array of custom variables that MediaWiki recognizes
-	 * @return true
 	 */
-	static function onMagicWordwgVariableIDs( &$customVariableIds ) {
+	public static function onMagicWordwgVariableIDs( &$customVariableIds ) {
 		// register variable ids:
 		$customVariableIds[] = self::MAG_SUBPAGETITLE;
 		$customVariableIds[] = self::MAG_SUBPAGES;
@@ -437,8 +436,6 @@ class ExtSubpageFun {
 		$customVariableIds[] = self::MAG_SUBPAGELEVEL;
 		$customVariableIds[] = self::MAG_NUMBEROFSUBPAGES;
 		$customVariableIds[] = self::MAG_TOPLEVELPAGE;
-
-		return true;
 	}
 
 }
