@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "18dfd86f_231458ef",
+        "filename": "src/ExtSubpageFun.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-16T16:36:53Z",
+      "side": 1,
+      "message": "confirmed all only used in this class: https://codesearch.wmcloud.org/search/?q\u003d%3A%3AMAG_\u0026i\u003dnope\u0026files\u003d\u0026repos\u003d",
+      "range": {
+        "startLine": 5,
+        "startChar": 1,
+        "endLine": 5,
+        "endChar": 9
+      },
+      "revId": "5bc62694840e2506778611195ee20b768933bff4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2f761ade_0f891d41",
+        "filename": "src/SubpageInfo.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-16T16:36:53Z",
+      "side": 1,
+      "message": "confirmed only used here: https://codesearch.wmcloud.org/search/?q\u003d%3A%3AgetParentPage%5C(\u0026i\u003dnope\u0026files\u003d\u0026repos\u003d",
+      "range": {
+        "startLine": 128,
+        "startChar": 1,
+        "endLine": 128,
+        "endChar": 9
+      },
+      "revId": "5bc62694840e2506778611195ee20b768933bff4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fcf8b58f_dd83d700",
+        "filename": "src/SubpageInfo.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-16T16:36:53Z",
+      "side": 1,
+      "message": "https://codesearch.wmcloud.org/search/?q\u003d%3A%3AisSiblingOf%5C(\u0026i\u003dnope\u0026files\u003d\u0026repos\u003d",
+      "range": {
+        "startLine": 163,
+        "startChar": 1,
+        "endLine": 163,
+        "endChar": 9
+      },
+      "revId": "5bc62694840e2506778611195ee20b768933bff4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8789b668_093f8d40",
+        "filename": "src/SubpageInfo.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2020-12-16T16:36:53Z",
+      "side": 1,
+      "message": "https://codesearch.wmcloud.org/search/?q\u003d%3A%3AisAncestorOf%5C(\u0026i\u003dnope\u0026files\u003d\u0026repos\u003d",
+      "range": {
+        "startLine": 180,
+        "startChar": 1,
+        "endLine": 180,
+        "endChar": 9
+      },
+      "revId": "5bc62694840e2506778611195ee20b768933bff4",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
