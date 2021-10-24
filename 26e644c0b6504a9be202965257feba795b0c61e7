@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62c48a7c_158189f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2021-10-24T14:03:59Z",
+      "side": 1,
+      "message": "Resubmit\n\nrsync: recv_generator: mkdir \"/cache/composer\" failed: Permission denied (13)",
+      "revId": "26e644c0b6504a9be202965257feba795b0c61e7",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
