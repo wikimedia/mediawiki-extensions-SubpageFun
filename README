@@ -48,7 +48,7 @@ Once you have downloaded the code, place the 'SubpageFun' directory within your 
 directory. Then add the following code to your [[Manual:LocalSettings.php|LocalSettings.php]] file:
 
  # Subpage Fun
- require_once( "$IP/extensions/SubpageFun/SubpageFun.php" );
+ wfLoadExtension( 'SubpageFun' );
 
 
 == Contributing ==
