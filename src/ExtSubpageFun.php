@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\AtEase\AtEase;
+
 class ExtSubpageFun {
 
 	private const MAG_SUBPAGETITLE = 'subpagetitle';
@@ -149,9 +151,9 @@ class ExtSubpageFun {
 		if ( !preg_match( '/^([\\/\\|%]).*\\1[imsSuUx]*$/', $pattern ) ) {
 			return false;
 		}
-		Wikimedia\suppressWarnings(); // instead of using the evil @ operator!
+		AtEase::suppressWarnings(); // instead of using the evil @ operator!
 		$isValid = preg_match( $pattern, ' ' ) !== false; // preg_match returns false on error
-		Wikimedia\restoreWarnings();
+		AtEase::restoreWarnings();
 		return $isValid;
 	}
 
