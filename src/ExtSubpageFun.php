@@ -353,15 +353,15 @@ class ExtSubpageFun {
 	 */
 	public static function onParserGetVariableValueSwitch( Parser $parser, &$cache, $magicWordId, &$ret ) {
 		switch ( $magicWordId ) {
-		case self::MAG_SUBPAGETITLE:
-		case self::MAG_SUBPAGES:
-		case self::MAG_PARENTPAGES:
-		case self::MAG_SIBLINGPAGES:
-		case self::MAG_SUBPAGELEVEL:
-		case self::MAG_NUMBEROFSUBPAGES:
-		case self::MAG_TOPLEVELPAGE:
-			self::variableValueSwitch( $parser, $magicWordId, $ret );
-			$cache[$magicWordId] = $ret;
+			case self::MAG_SUBPAGETITLE:
+			case self::MAG_SUBPAGES:
+			case self::MAG_PARENTPAGES:
+			case self::MAG_SIBLINGPAGES:
+			case self::MAG_SUBPAGELEVEL:
+			case self::MAG_NUMBEROFSUBPAGES:
+			case self::MAG_TOPLEVELPAGE:
+				self::variableValueSwitch( $parser, $magicWordId, $ret );
+				$cache[$magicWordId] = $ret;
 		}
 	}
 
