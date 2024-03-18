@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3b5c9b1_19167cf4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6729
+      },
+      "writtenOn": "2024-03-18T03:23:48Z",
+      "side": 1,
+      "message": "resubmit\n\u003e Permission denied (13)",
+      "revId": "2026a0811c37fed03720a35b3f807cadd4f0102e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
