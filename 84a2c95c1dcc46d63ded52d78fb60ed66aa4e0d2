@@ -1,0 +1,7 @@
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Sun, 24 Nov 2024 14:41:56 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/SubpageFun/+/1096400
+Project: mediawiki/extensions/SubpageFun
+Branch: refs/heads/REL1_41
