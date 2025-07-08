@@ -16,6 +16,24 @@
       "message": "The Title class was backported to the LTS version 1.39.4. That would be enough here.",
       "revId": "2dc8963841bc6887e912543cb0f48932f2404da6",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8534c78_e09286ef",
+        "filename": "extension.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 11926
+      },
+      "writtenOn": "2025-07-08T10:44:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3c7e7c3c_ab4d266b",
+      "revId": "2dc8963841bc6887e912543cb0f48932f2404da6",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
     }
   ]
 }
