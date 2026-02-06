@@ -1,7 +1,6 @@
 <?php
 
 use MediaWiki\Title\Title;
-use Wikimedia\AtEase\AtEase;
 
 class ExtSubpageFun {
 
@@ -152,9 +151,8 @@ class ExtSubpageFun {
 		if ( !preg_match( '/^([\\/\\|%]).*\\1[imsSuUx]*$/', $pattern ) ) {
 			return false;
 		}
-		AtEase::suppressWarnings(); // instead of using the evil @ operator!
-		$isValid = preg_match( $pattern, ' ' ) !== false; // preg_match returns false on error
-		AtEase::restoreWarnings();
+		// phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged
+		$isValid = @preg_match( $pattern, ' ' ) !== false; // preg_match returns false on error
 		return $isValid;
 	}
 
