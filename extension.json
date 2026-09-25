@@ -22,7 +22,7 @@
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "ExtSubpageFun::init",
-		"MagicWordwgVariableIDs": "ExtSubpageFun::onMagicWordwgVariableIDs",
+		"GetMagicVariableIDs": "ExtSubpageFun::onGetMagicVariableIDs",
 		"ParserGetVariableValueSwitch": "ExtSubpageFun::onParserGetVariableValueSwitch",
 		"GetThisVariableValueSwitch": "ExtSubpageFun::onGetThisVariableValueSwitch"
 	},
