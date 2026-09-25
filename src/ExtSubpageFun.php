@@ -428,7 +428,7 @@ class ExtSubpageFun {
 	/**
 	 * @param string[] &$customVariableIds Array of custom variables that MediaWiki recognizes
 	 */
-	public static function onMagicWordwgVariableIDs( &$customVariableIds ) {
+	public static function onGetMagicVariableIDs( &$customVariableIds ) {
 		// register variable ids:
 		$customVariableIds[] = self::MAG_SUBPAGETITLE;
 		$customVariableIds[] = self::MAG_SUBPAGES;
